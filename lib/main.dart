@@ -1,6 +1,6 @@
-import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart';
+
 import 'manager.dart';
 import 'sec.dart';
 
@@ -45,24 +45,24 @@ class MainScreen extends StatelessWidget {
                 elevation: 5.0,
                 child: MaterialButton(
                   onPressed: () async {
-                    FilePickerResult result =
-                        await FilePicker.platform.pickFiles();
-
-                    if (result != null) {
-                      File file = File(result.files.single.path);
-                    } else {
-                      // User canceled the picker
-                      print("ERROR");
-                    }
+                    // FilePickerResult result =
+                    //     await FilePicker.platform.pickFiles();
+                    //
+                    // if (result != null) {
+                    //   File file = File(result.files.single.path);
+                    // } else {
+                    //   // User canceled the picker
+                    //   print("ERROR");
+                    // }
                     //***** code fo tabbed view
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) {
-                    //       return TabsApp();
-                    //     },
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return TabsApp();
+                        },
+                      ),
+                    );
                   },
                   minWidth: 250.0,
                   height: 50.0,
