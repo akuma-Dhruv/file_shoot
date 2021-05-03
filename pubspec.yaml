@@ -1,4 +1,4 @@
-name: file_shoot
+name: file_shoot_ui
 description: file shoot app ui
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
